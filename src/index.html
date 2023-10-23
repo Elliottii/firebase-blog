@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta name="description" content="Blog made with Firebase" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md">
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <div
+          class="container-lg pt-3 pb-3 pt-md-0 pb-md-0 d-md-flex justify-content-between align-items-center"
+        >
+          <ul id="nav-links" class="navbar-nav mb-0 me-auto"></ul>
+          <i id="locationIcon" class="bi bi-geo-alt-fill icon"></i>
+          <div class="d-md-flex">
+            <select id="select-location" class="form-select"></select>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-mobile">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-toggler"
+          aria-controls="navbar-toggler"
+          aria-expanded="false"
+          aria-label="Näytä tai sulje navigaatio/Toggle navigation"
+        >
+          <i class="bi bi-list open"></i>
+          <i class="bi bi-x-lg close"></i>
+        </button>
+        <ul id="mobile-nav-links" class="navbar-mobile-nav m-0"></ul>
+      </div>
+    </nav>
+    <header>
+      <div class="container-lg header-inner">
+        <h1 class="display-3">Burger Blog</h1>
+        <p id="slogan" class="fs-4 text-center">
+          Burger arvostelut kätevästi koko Suomesta!
+        </p>
+      </div>
+    </header>
+    <main class="container-lg">
+      <section id="content"></section>
+    </main>
+  </body>
+</html>
